@@ -66,7 +66,7 @@ input:hover {
 input:focus {
   border-color: white;
   box-shadow: none;
-  width: 64%;
+  width: 90%;
 }
 
 @media only screen and (min-width: 400px) {
