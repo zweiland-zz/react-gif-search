@@ -12,6 +12,16 @@ h2 { font-size: 32px; line-height: 40px; }
   width: 90%;
 }
 
+.navbar-default .navbar-nav>li>a {
+  color: serenity;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+  color: cyan;
+  background-color: transparent;
+}
+
 .navbar-default {
   background: black;
   border-radius: 0;
@@ -80,33 +90,6 @@ h2 { font-size: 32px; line-height: 40px; }
   transform: translateX(-50%) translateY(-50%);
 }
 
-input {
-  display: block;
-  font-size: 24px;
-  height: 48px;
-  margin: 0 auto;
-  text-align: center;
-  width: 40%;
-  background-color: white;
-  border: 2px solid white;
-  color: #222;
-  outline: none;
-  border-radius: 32px;
-  transition: all .08s ease-out;
-}
-input:hover {
-  border-color: cyan;
-  box-shadow: 0 0 8px cyan;
-}
-input:focus {
-}
-.form-control {
-  text-align: left;
-  border-radius: 0;
-  border-color: white;
-  box-shadow: none;
-}
-
 .btn {
   width: 100%;
   border-radius: 0;
@@ -123,8 +106,9 @@ input:focus {
 }
 
 .btn-primary:hover {
-  background-color: #111;
-  border-color: #111;
+  color: black;
+  background-color: cyan;
+  border-color: cyan;
 }
 
 .form-group {
@@ -138,15 +122,57 @@ input:focus {
   line-height: 24px;
 }
 
+input {
+  display: block;
+  font-size: 24px;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid white;
+  color: #222;
+  outline: none;
+  border-radius: 48px;
+  transition: all .08s ease-out;
+  box-shadow: none;
+}
+
+.search>input {
+  width: 100%;
+  font-size: 24px;
+  line-height: 40px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
 .form-control {
   font-size: 20px;
   line-height: 24px;
-  padding: 8px 16px;
   height: auto;
+  text-align: left;
+  border-radius: 0;
+  border-color: white;
+  box-shadow: none;
+  border-width: 2px;
+  padding: 16px;
+  transition: all .08s ease-out;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active:focus,
+.search>input:hover,
+.search>input:focus,
+.search>input:active:focus {
+  border-color: cyan;
+  box-shadow: none;
 }
 
 .has-error .form-control {
   border-color: #FF1500;
+  box-shadow: none;
+}
+
+.has-success .form-control {
+  border-color: #00FF1A;
   box-shadow: none;
 }
 
@@ -161,6 +187,13 @@ input:focus {
 .has-error.radio label,
 .has-error.radio-inline label {
   color: #FF1500;
+}
+
+.help-block {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: serenity;
 }
 
 @media only screen and (min-width: 400px) {
