@@ -3,13 +3,15 @@ html, body {
   margin: 0; padding: 0;
 }
 
-body {
-  padding: 24px 0;
-}
-
 .app {
   margin: 0 auto;
   width: 90%;
+}
+
+.navbar-default {
+  background: black;
+  border-radius: 0;
+  border: 0;
 }
 
 .gif-item {
@@ -64,9 +66,6 @@ input:hover {
   box-shadow: 0 0 8px cyan;
 }
 input:focus {
-  border-color: white;
-  box-shadow: none;
-  width: 90%;
 }
 
 @media only screen and (min-width: 400px) {
