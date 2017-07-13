@@ -6,6 +6,7 @@ html, body {
 }
 
 h2 { font-size: 32px; line-height: 40px; }
+a  { color: serenity; }
 
 .app {
   margin: 0 auto;
@@ -34,7 +35,7 @@ h2 { font-size: 32px; line-height: 40px; }
   position: absolute;
   right: 8px;
   top: 8px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .fa-heart:hover {
@@ -90,6 +91,13 @@ h2 { font-size: 32px; line-height: 40px; }
   transform: translateX(-50%) translateY(-50%);
 }
 
+.ReactModal__Overlay--after-open {
+  z-index: 101;
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .btn {
   width: 100%;
   border-radius: 0;
@@ -102,6 +110,7 @@ h2 { font-size: 32px; line-height: 40px; }
 }
 
 .btn-primary {
+  color: white;
   background-color: black;
 }
 
@@ -109,6 +118,29 @@ h2 { font-size: 32px; line-height: 40px; }
   color: black;
   background-color: cyan;
   border-color: cyan;
+}
+
+.ReactModal__Overlay--after-open button {
+  color: black;
+  width: auto;
+  border-radius: 0;
+  border-color: black;
+  background: white;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 24px;
+  transition: all .08s ease-out;
+  height: auto;
+  box-shadow: none;
+}
+
+.ReactModal__Overlay--after-open button:hover {
+  color: black;
+  background: cyan;
+  border-color: cyan;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-style: solid;
 }
 
 .form-group {
