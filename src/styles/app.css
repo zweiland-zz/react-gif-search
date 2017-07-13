@@ -1,6 +1,8 @@
 html, body {
+  color: white;
   background-color: #222;
   margin: 0; padding: 0;
+  font-family: "SF Compact Text";
 }
 
 .app {
@@ -15,7 +17,7 @@ html, body {
 }
 
 .fa-heart {
-  color: #a94442;
+  color: #FF1500;
   font-size: 20px;
   position: absolute;
   right: 8px;
@@ -24,7 +26,7 @@ html, body {
 }
 
 .fa-heart:hover {
-  color: #ccc;
+  opacity: 1;
 }
 
 .fa-heart-o {
@@ -37,7 +39,8 @@ html, body {
 }
 
 .fa-heart-o:hover {
-  color: #a94442;
+  color: #FF1500;
+  opacity: 1;
 }
 
 
@@ -94,6 +97,53 @@ input:hover {
   box-shadow: 0 0 8px cyan;
 }
 input:focus {
+}
+.form-control {
+  text-align: left;
+  border-radius: 0;
+  border-color: white;
+  box-shadow: none;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 0;
+  border-color: black;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 24px;
+  transition: all .08s ease-out;
+}
+
+.btn-primary {
+  background-color: black;
+}
+
+.btn-primary:hover {
+  background-color: #111;
+  border-color: #111;
+}
+
+.control-label {
+  font-weight: normal;
+}
+
+.has-error .form-control {
+  border-color: #FF1500;
+  box-shadow: none;
+}
+
+.has-error .checkbox,
+.has-error .checkbox-inline,
+.has-error .control-label,
+.has-error .help-block,
+.has-error .radio,
+.has-error .radio-inline,
+.has-error.checkbox label,
+.has-error.checkbox-inline label,
+.has-error.radio label,
+.has-error.radio-inline label {
+  color: #FF1500;
 }
 
 @media only screen and (min-width: 400px) {
