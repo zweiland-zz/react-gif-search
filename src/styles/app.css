@@ -5,6 +5,8 @@ html, body {
   font-family: "SF Compact Text";
 }
 
+h2 { font-size: 32px; line-height: 40px; }
+
 .app {
   margin: 0 auto;
   width: 90%;
@@ -109,10 +111,11 @@ input:focus {
   width: 100%;
   border-radius: 0;
   border-color: black;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
-  padding: 8px 24px;
+  padding: 16px 24px;
   transition: all .08s ease-out;
+  height: auto;
 }
 
 .btn-primary {
@@ -124,8 +127,22 @@ input:focus {
   border-color: #111;
 }
 
+.form-group {
+  margin: 0 0 24px;
+  padding: 0;
+}
+
 .control-label {
   font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-control {
+  font-size: 20px;
+  line-height: 24px;
+  padding: 8px 16px;
+  height: auto;
 }
 
 .has-error .form-control {
